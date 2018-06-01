@@ -34,24 +34,26 @@ $('.questionAnswerForm').html(`<h1 class="question">${questionnumber.name} </h1>
  <form>
     <fieldset>
     <legend>Answer Choices</legend> 
-    <label class="answerOption">
-    <input type="radio" value="${questionarray[0]}" name="answer" required>
+    <div role="radiogroup">
+    <label for="answer1" class="answerOption">
+    <input type="radio" value="${questionarray[0]}" id="answer1" name="answer" required>
     <span>${questionarray[0]}</span>
     </label> 
-      <label class="answerOption">
-    <input type="radio" value="${questionarray[1]}" name="answer" required>
+      <label for="answer2" class="answerOption">
+    <input type="radio" value="${questionarray[1]}" id="answer2" name="answer" required>
     <span>${questionarray[1]}</span>
     </label> 
-      <label class="answerOption">
-    <input type="radio" value="${questionarray[2]}" name="answer" required>
+      <label for="answer3" class="answerOption">
+    <input type="radio" value="${questionarray[2]}" id="answer3" name="answer" required>
     <span>${questionarray[2]}</span>
     </label> 
-      <label class="answerOption">
-    <input type="radio" value="${questionarray[3]}" name="answer" required>
+      <label for="answer4" class="answerOption">
+    <input type="radio" value="${questionarray[3]}" id="answer4" name="answer" required>
     <span>${questionarray[3]}</span>
     </label> 
-    <button type="submit" class="submitButton">Submit</button>
+    </div>
     </fieldset>
+    <button type="submit" class="submitButton">Submit</button>
 </form>`)
   
 }
